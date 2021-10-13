@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <title>Обо мне</title>
+    <style>
+#login{
+    background-color: #e4f2de; outline:none;
+}
+#e-mail{
+    background-color: #e4f2de; outline:none;
+}
+#sub{
+    border-color: green;
+    outline:none;
+}
+/*    body {
+    font-family: sans-serif;
+    font-size: 90%;
+    } */
+h2{
+    text-align: center;
+    } 
+form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px 20px;
+    background: #f5f5f5;
+    box-shadow: 0px 1px 3px
+    rgba(0, 0, 0, 0.3);
+    }
+label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    }
+label:first-child {
+    margin-top: 0;
+    }
+input[type="text"],
+input[type="e-mail"] {
+    width: 95%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background: white;
+    border-radius: 5px;
+    }
+input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    width: 80px;
+    padding: 8px;
+    color: rgb(76, 215, 21);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;} 
+table {
+    border: 1px solid grey;
+}
+th {
+   border: 1px solid grey;
+}
+td {
+   border: 1px solid grey;
+}
+    </style>
+</head>
+<body>
+    <div class="ggg">
+        <h5>Меню</h5>
+          <div>
+            <a href="#коротко_о_себе">О себе</a>
+            <a href="#фото">Фото</a> 
+            <a href="#отображение_чисел">Отображение чисел</a> 
+            <a href="#списки">Списки</a>
+            <a href="#таблица">Таблица</a>
+            <a href="#форма">Форма</a>
+          </div>
+          
+    </div>
+    <h2 id="коротко_о_себе">Коротко о себе</h2>
+    
+    <pre>
+    ФИО: Тучнолобова Ирина Олеговна
+    Дата рождения: 02.06.2002
+    Место рождения: с.Яренск, Ленского р-на, Архангельской области
+    Увлечения: слушать музыку, читать детективы, смотреть сериалы
+    </pre>
+
+    <h2 id="фото" class="red">Фото </h2>
+    <figure>
+        <img src="6.jpg">
+        <figcaption>Солнце</figcaption>
+    </figure>
+    <h2 id="отбражение_чисел">Визуальное отображение числовых величин </h2>
+    <div>
+        <meter value="1477" min="0" max="15000">14477</meter>
+        <br>
+        <meter value="4477" min="0" max="15000">14477</meter>
+        <br>
+        <meter value="6477" min="0" max="15000">14477</meter>
+    </div>
+
+    <hr>
+    <h2 id="списки"> Списки</h2>
+    <p>Не упрядоченный список</p>
+    <ul>
+        <li>text1</li>
+        <li>text2</li>
+        <li>text3</li>
+    </ul>
+    <p>Упрядоченный список, т.е. нумерованный</p>
+    <ol>
+        <li>text1</li>
+        <li>text2</li>
+        <li>text3</li>
+    </ol>
+
+    <h2 id="таблица"> Таблица с расписанием на понедельник</h2>
+    <table>
+        <tr>
+            <th>Время</th>
+            <th>Предмет</th>
+        </tr> 
+        <tr>
+            <td>8:30</td>
+            <td>Физ-ра</td>
+        </tr> 
+        <tr>
+            <td>10:10</td>
+            <td>Высшая математика</td>
+        </tr>
+        <tr>
+            <td>12:40</td>
+            <td>Философия</td>
+        </tr>
+        <tr>
+            <td>14:20</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>16:00</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>17:40</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>19:20</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>21:00</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 id="ссылки">Ссылки </h2>
+    
+    <br>
+    Ссылка 1 (<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Моя почта</a>) 
+    <br>
+    Ссылка 2 (<a href="6.jpg" target="_blank">Картинка</a>)
+
+    
+    <h2 id="форма">Форма </h2>
+    <form class="login"  method="post">
+        <h2>Оставьте свой отзыв</h2>
+
+        <label for="login">Логин</label><br>
+        <input type="text" id="login" name="login" required><br>
+        <label for="e-mail">E-mail</label><br>
+        <input type="text" id="e-mail" name="e-mail"><br>
+        <p>Введите отзыв<br>
+            <textarea ></textarea>
+        </p>
+        <input type="submit" id="sub" value="Отправить">
+    </form>
+    <p>text1</p>
+    <br><br>
+    <p class="red">text2</p>
+
+
+</body>
+</html>
