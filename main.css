@@ -1,0 +1,21 @@
+body{
+    color: black;
+}
+div {
+    background: honeydew;
+}
+h2 {
+    color: blue;
+}
+h2.red {
+    color: red;
+}
+p {
+    color: blue;
+}
+p.red {
+    color: red;
+}
+.ggg{
+    color: rgb(0, 255, 42);
+}
